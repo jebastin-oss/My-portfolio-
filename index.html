@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My First Site</title>
+
+  <!-- CSS direct inside -->
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; }
+    header { background: #eee; padding: 10px; }
+    nav a { margin-right: 10px; text-decoration: none; }
+    .hero { padding: 20px; }
+    button { padding: 8px 12px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Vanakkam 👋</h1>
+      <p>Ithu en first website</p>
+      <button id="cta">Say Hi</button>
+    </section>
+  </main>
+
+  <footer>© 2025 MySite</footer>
+
+  <!-- JavaScript direct inside -->
+  <script>
+    document.getElementById("cta").addEventListener("click", () => {
+      alert("Hello from JS! 🎉");
+    });
+  </script>
+</body>
+</html>
